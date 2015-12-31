@@ -1,0 +1,383 @@
+/* 
+	importerino fonterino
+ */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700);
+
+/* 
+	Small screens (phones and stuff)
+ */
+a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+a:active, a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+}
+
+/* 
+	Classes
+ */
+ 
+.footer {
+	background-color: #350813;
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8px;
+	width: 100%;
+}
+
+.footer .content {
+	padding-bottom: 6px;
+	padding-top: 6px
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.main {
+	margin-top: 48px;
+}
+
+.member {
+	font-size: 20px;
+	height: 150px;
+	margin-top: 30px;
+}
+
+.nav {
+	background-color: #B51C41;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	height: 44px;
+}
+
+.nav li a {
+	background-color: #EFEFEF;
+	color: #333;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.nav li a:active, .nav li a:hover {
+	background-color: #CFCFCF;
+	text-decoration: none;
+}
+
+.nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-bottom {
+	border-top: solid #9B1838 4px;
+}
+
+.navbutton {
+	background-image: url('../img/menu.png');
+	display: block;
+	height: 20px;
+	width: 26px;
+}
+
+.navbutton-container {
+	padding: 12px;
+}
+
+.navlinks {
+	display: none;
+}
+
+.slide {
+	background-attachment: scroll;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* 
+	Sections-specific
+ */
+
+#about {
+	background-color: #B51C41;
+	background-image: linear-gradient(rgba(181, 28, 65, 0.8), rgba(181, 28, 65, 0.8)), url('../img/piano_bg_xs.jpg');
+	color: #FFF;
+}
+
+#about .content {
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+
+#about p {
+	margin-bottom: 50px;
+	margin-right: 15%;
+	text-align: left;
+}
+
+#about p:nth-child(2) {
+	margin-left: 15%;
+	margin-right: 0;
+	text-align: right;
+}
+
+#contact {
+	background-attachment: scroll;
+	background-color: #B51C41;
+	background-image: url('../img/music_bg.svg');
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 85%;
+	color: #FFF;
+}
+
+#contact .content {
+	margin-bottom: 110px;
+	margin-top: 40%;
+}
+
+#experience {
+	background-color: #FFF;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/sheetmusic_bg_xs.jpg');
+}
+
+#experience .content {
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+#start {
+	background-image: url('../img/teacher_bg_xs.jpg'); /* fallback for browsers without rgba/gradients */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/teacher_bg_xs.jpg');
+	color: #FFF;
+}
+
+#start h1 {
+	font-size: 44px;
+}
+
+#start h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin-left: 2px;
+}
+
+#start .content {
+	margin-bottom: 65px;
+	margin-top: 130px;
+}
+
+/* 
+	Small screens but not that small (iPads and stuff)
+ */
+@media (min-width: 768px) {
+	
+	/* 
+		Actual tags
+	*/
+	
+	body {
+		font-size: 28px;
+	}
+	
+	/* 
+		Classes
+	*/
+	
+	.member {
+		font-size: 22px;
+	}
+	
+	.member-caption {
+		text-align: center;
+	}
+	
+	.member-logo {
+		margin-bottom: 20px;
+	}
+	
+	/* 
+		IDs
+	*/
+	
+	#contact {
+		background-size: 70%;
+	}
+
+	#contact .content {
+		margin-bottom: 140px;
+		margin-top: 30%
+	}
+
+	#experience .content {
+		margin-bottom: 80px;
+		margin-top: 80px;
+		text-align: center;
+	}
+	
+	#about .content {
+		margin-bottom: 130px;
+		margin-top: 130px;
+	}
+	
+	#about p {
+		margin-bottom: 75px;
+	}
+	
+	#start .content {
+		margin-bottom: 125px;
+		margin-top: 250px;
+	}
+	
+	#start h2 {
+		font-size: 20px;
+		margin-left: 1px;
+	}
+}
+
+/* 
+	Medium screens (apparently these exist)
+ */
+@media (min-width: 992px) {
+
+	body {
+		font-size: 32px;
+	}
+	
+	h1 {
+		font-size: 42px;
+	}
+	
+	.footer {
+		font-size: 10px;
+	}
+	
+	.footer .content {
+		padding-bottom: 7px;
+		padding-top: 7px;
+	}
+
+	.main {
+		margin-top: 58px;
+	}
+	
+	.member {
+		font-size: 24px;
+	}
+
+	.nav, .navlinks {
+		height: 54px;
+	}
+	
+	.nav {
+		font-size: 20px;
+	}
+	
+	.nav li {
+		display: inline-block;
+		margin-left: 60px;
+	}
+	
+	.nav li:first-child {
+		margin-left: 0;
+	}
+	
+	.nav li a {
+		background-color: transparent;
+		color: #FFF;
+		display: inline;
+		padding: 0;
+	}
+	
+	.nav li a:active, .nav li a:hover {
+		background-color: transparent;
+		color: #DDD;
+	}
+
+	.navbutton-container {
+		display: none;
+	}
+	
+	.navlinks {
+		display: block !important;
+		padding: 12px;
+		text-align: center;
+	}
+
+	.slide {
+		background-attachment: fixed;
+	}
+	
+	/* 
+		IDs
+	*/
+
+	#contact .content {
+		margin-bottom: 160px;
+		margin-top: 25%
+	}
+	
+	#experience {
+		background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/sheetmusic_bg.jpg');
+	}
+	
+	#experience .content {
+		margin-bottom: 100px;
+		margin-top: 100px;
+	}
+
+	#about {
+		background-image: linear-gradient(rgba(181, 28, 65, 0.8), rgba(181, 28, 65, 0.8)), url('../img/piano_bg.jpg');
+	}
+	
+	#about .contents {
+		margin-bottom: 180px;
+		margin-top: 180px;
+	}
+	
+	#about p {
+		margin-bottom: 100px;
+	}
+
+	#start {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/teacher_bg.jpg');
+	}
+	
+	#start .content {
+		margin-bottom: 140px;
+		margin-top: 280px;
+	}
+
+	#start h1 {
+		font-size: 50px;
+	}
+	
+	#start h2 {
+		font-size: 24px;
+		margin-left: 2px;
+	}
+}
+
+/* 
+	iPad stuff
+ */
+
+@media (device-width: 768px) {
+	.slide {
+		background-attachment: scroll;
+	}
+}
