@@ -63,6 +63,11 @@ body {
 	height: 44px;
 }
 
+.nav li {
+	margin: 0;
+	padding: 0;
+}
+
 .nav li a {
 	background-color: #EFEFEF;
 	color: #333;
@@ -181,6 +186,24 @@ body {
 	margin-top: 130px;
 }
 
+#why {
+	background-image: url('../img/pianoinside_bg_xs.jpg'); /* fallback for browsers without rgba/gradients */
+	background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/pianoinside_bg_xs.jpg');
+}
+
+#why h1 {
+	margin-bottom: 20px;
+}
+
+#why li {
+	margin-bottom: 10px;
+}
+
+#why .content {
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
 /* 
 	Small screens but not that small (iPads and stuff)
  */
@@ -246,6 +269,11 @@ body {
 	#start h2 {
 		font-size: 20px;
 		margin-left: 1px;
+	}
+
+	#why .content {
+		margin-bottom: 80px;
+		margin-top: 80px;
 	}
 }
 
@@ -369,6 +397,23 @@ body {
 	#start h2 {
 		font-size: 24px;
 		margin-left: 2px;
+	}
+
+	#why {
+		background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/pianoinside_bg.jpg');
+	}
+
+	#why h1 {
+		margin-bottom: 25px;
+	}
+
+	#why li {
+		margin-bottom: 15px;
+	}
+
+	#why .content {
+		margin-bottom: 100px;
+		margin-top: 100px;
 	}
 }
 
